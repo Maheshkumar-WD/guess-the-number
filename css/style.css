@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+  /* font-family: 'Monoton', cursive; */
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  padding: 0 200px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+.header button {
+  background-color: green;
+  font-size: 30px;
+  color: white;
+  border: 0;
+  border-radius: 25px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #026f02;
+}
+
+.guessbetween {
+  font-size: 36px;
+  color: white;
+}
+
+.guessbetween span {
+  color: green;
+  font-weight: 900;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 0;
+  position: relative;
+}
+
+.heading p {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 40px;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.heading::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: white;
+  bottom: 20px;
+  z-index: -1;
+}
+
+.guess_output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.guess_output::before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  z-index: -1;
+}
+
+.guess_output p {
+  width: 150px;
+  height: 150px;
+  font-size: 40px;
+  margin: 0 20px;
+  background-color: red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+.guessing_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guessing_input_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.guessing_input_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.guessing_input_wrapper input[type="number"] {
+  width: 300px;
+  height: 50px;
+  font-size: 50px;
+  background-color: black;
+  color: antiquewhite;
+  padding-left: 10%;
+  border: 2px solid white;
+  border-radius: 15px;
+  outline: none;
+}
+
+.guessing_input_wrapper button {
+  margin: 15px 0;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #026f02;
+}
+
+.score_display_wrapper {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.score {
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0px;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guessbetween {
+    font-size: 26px;
+  }
+  .heading p {
+    font-size: 30px;
+  }
+  .heading::before {
+    bottom: 15px;
+  }
+  .guess_output p {
+    width: 100px;
+    height: 100px;
+  }
+  .guessing_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .score_display_wrapper {
+    width: 100%;
+  }
+  .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .message {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 986px) {
+  .container {
+    padding: 0px;
+  }
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .guessbetween {
+    font-size: 26px;
+  }
+  .heading p {
+    font-size: 30px;
+  }
+  .heading::before {
+    bottom: 15px;
+  }
+  .header button {
+    font-size: 26px;
+    padding: 10px;
+  }
+  .guess_output p {
+    width: 100px;
+    height: 100px;
+  }
+  .guessing_wrapper {
+    margin-top: 20px;
+  }
+  .score_display_wrapper {
+    width: 300px;
+  }
+  .message {
+    font-size: 26px;
+  }
+  .score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
